@@ -1,0 +1,25 @@
+.text-center button{
+  
+  text-align: center;
+  display: inline-block;
+  font-family: "Roboto",sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(212, 74, 74);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.text-center button:hover,.form button:active{
+  background:rgba(60, 255, 0, 0.966);
+}
+.text-center{
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 45%;
+  bottom: 0.5%;
+}

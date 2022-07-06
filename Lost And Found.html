@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <title> Lost And Found </title>
+            <link rel="Stylesheet" href="Style1.css">
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+            <form onsubmit="return Validate()" action="Descision.html">
+                <input id="username" type="Text" placeholder="Name"/>
+                <input id="password" type="password" placeholder="Password"/>
+                <button  type="submit">Login</button>
+                <p class="message">Not Registered? <a href="Registration.html">Register</a>
+            </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript">
+            function Validate()
+            {
+                var username=document.getElementById("username");
+                var password=document.getElementById("password");
+                if(username.value==""||password.value=="")
+                {
+                    alert("No blank values allowed");
+                    return false;
+                }
+                else if(username.value=="manoj"&&password.value=="manoj1609")
+                {
+                    true;
+                }
+                else if(username.value!="manoj"||password.value!="manoj1609")
+                {
+                    alert("Wrong Username or Password");
+                    return false;
+                }
+                else
+                {
+                    alert("Not Registered");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

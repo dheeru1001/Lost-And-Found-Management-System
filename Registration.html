@@ -1,0 +1,45 @@
+<html>
+    <head> 
+        <title> Lost And Found </title>
+            <link rel="Stylesheet" href="Style1.css">
+    </head>
+    <body>
+        <div class="Registration-page">
+            <div class="form">
+                <form  action="Register.php" method = "post"  >
+                <input id="name" type="Text" placeholder="Name"  name="name"/>
+                <input id="mail" type="Text" placeholder="E-Mail" name="mail"/>
+                <input id="pno" type="text" placeholder="Phone Number" name="phone"/>
+                <input id="username" type="Text" placeholder="Username" name="user"/>
+                <input id="password" type="password" placeholder="Password" name="pass"/>
+                <button type="submit" onSubmit ="Lost And Found.html">Submit</button>
+                <p class="message">Already Registered? <a href="Lost And Found.html">Login</a></p>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript">
+            function Validate1()
+            {
+                var name=document.getElementById("name");
+                var mail=document.getElementById("mail");
+                var phone=document.getElementById("pno");
+                var username=document.getElementById("username");
+                var password=document.getElementById("password");
+                if(name.value==""||mail.value==""||phone.value==""||username.value==""||password.value=="")
+                {
+                    alert("Blank Fields should be filled");
+                    return false;
+                }
+                else if(name.value=="Dheeraj"||mail.value=="E19CSE393@bennett.edu.in"||phone.value=="9390937000")
+                {
+                    alert("Already Registered Please Login");
+                    return false;
+                }
+                else
+                {
+                     true;
+                }
+            }
+        </script>
+    </body>
+</html>

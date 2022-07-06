@@ -1,0 +1,55 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(https://scontent.fhyd11-1.fna.fbcdn.net/v/t1.0-0/p206x206/42303206_10156211665566896_768141221418762240_n.jpg?_nc_cat=107&_nc_sid=85a577&_nc_oc=AQl0Bve977AfZ6poXUH8AEyWDrpPRrof5GOrQXQoi_8HZoZIPO2EuYh45qYMi3cuebZYS3Fcff4AKoPBYj4-KyQJ&_nc_ht=scontent.fhyd11-1.fna&_nc_tp=6&oh=ec99e9fc19554cd99661f1d20212121d&oe=5F0C47D3);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: rgba(7, 189, 195, 0.8);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+.form input{
+    font-family: "Roboto",sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(223, 10, 10);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover,.form button:active{
+    background: rgb(11, 214, 21);
+}
+.form .message{
+    margin: 15px 0 0;
+    color: lightgrey;
+    font-size: 12px;
+}
+.form .message a{
+    color: linen;
+    text-decoration: none;
+} 

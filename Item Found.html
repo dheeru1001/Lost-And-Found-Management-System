@@ -1,0 +1,40 @@
+<html>
+    <head> 
+        <title> Lost And Found </title>
+            <link rel="Stylesheet" href="Style5.css">
+    </head>
+    <body>
+        <div class="Found an Item">
+            <div class="form">
+                <form  action="found1.php" method="POST">
+                <input id="item" type="Text" placeholder="Item" name="item"/>
+                <input id="brand" type="Text" placeholder="Brand" name="brand"/>
+                <input id="color" type="Text" placeholder="Color" name="color"/>
+                <input id="date" type="date" placeholder="Date" name="date"/>
+                <input id="time" type="time" placeholder="Time" name="time"/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript">
+            function Validate2()
+            {
+                var item=document.getElementById("item");
+                var brand=document.getElementById("brand");
+                var color=document.getElementById("color");
+                var date=document.getElementById("date");
+                var time=document.getElementById("time");
+                if(item.value==""||brand.value==""||color.value=="")
+                {
+                    alert("Blank Fields need to be filled");
+                    return false;
+                }
+                else
+                {
+                    alert("Details are saved");
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>
